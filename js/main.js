@@ -35,6 +35,8 @@
     // Primary Contact Details
     const clientInfo = {
         "phone": ["+91 9459184999", "+91 9459185999"],
+        "whatsapp": "919459184999",
+        "instagram": "",
         "email": ["info@brightit.in"],
         "address": ["1st floor, Yalamanchili Towers, Sri Anjaneya Township, Edupugallu, Vijayawada, 521151"],
         "workinghours": ["8:00 AM - 6:00 PM"]
@@ -42,6 +44,9 @@
     Object.entries(clientInfo).forEach(function ([key, val]) {
         $('.brightit-info-single-' + key).html(val[0]);
         $('.brightit-info-' + key).append(val.toString().replaceAll(",", ", "));
+        if (key === "whatsapp") {
+            $('#link-' + key).attr("href", ("https://api.whatsapp.com/send?phone=" + val));
+        }
     });
 
     // Choose plan body type
@@ -78,7 +83,7 @@
             $('#price-' + subscription).html(price);
             const message = "Hey, I want to subscribe to the Bright It " + subscription.toUpperCase() + " Membership for my " + e.target.value.toUpperCase() + ".";
             const encodedMessage = encodeURIComponent(message);
-            const whatsappLink = 'https://api.whatsapp.com/send?phone=' + clientInfo.phone[0].replaceAll("+91 ", "91") + '&text=' + encodedMessage;
+            const whatsappLink = 'https://api.whatsapp.com/send?phone=' + clientInfo.whatsapp + '&text=' + encodedMessage;
             $('#buy-' + subscription).attr("href", whatsappLink);
         });
         if (scrollCounter) {

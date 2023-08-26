@@ -190,13 +190,13 @@
     <div class="service">
         <div class="container">
             <div class="section-header text-center">
-                <span>
-                    Our services go beyond the traditional, offering you the ease of having your car cleaned and
-                    maintained wherever you are. From your home to your office, or even at your preferred
-                    location, we ensure your car receives the attention it deserves.
-                </span>
-                <div class="mt-3">
-                    <p>What We Do?</p>
+                <p>What We Do?</p>
+                <div class="mb-3 mt-1">
+                    <span>
+                        Our services go beyond the traditional, offering you the ease of having your car cleaned and
+                        maintained wherever you are. From your home to your office, or even at your preferred
+                        location, we ensure your car receives the attention it deserves.
+                    </span>
                 </div>
                 <h2>Premium Brightening Services</h2>
             </div>
@@ -246,14 +246,14 @@
     <div class="price" id="pricingArea">
         <div class="container">
             <div class="section-header text-center">
-                <span>
-                    Choose from our range of thoughtfully crafted packages, each designed to suit your unique
-                    needs. From a quick refresh to a comprehensive spa-like treatment, we offer three distinct
-                    options for your convenience. With "Bright It," you're in control of how you want to keep
-                    your car bright.
-                </span>
-                <div class="mt-3">
-                    <p>Pricing</p>
+                <p>Pricing</p>
+                <div class="mb-3 mt-1">
+                    <span>
+                        Choose from our range of thoughtfully crafted packages, each designed to suit your unique
+                        needs. From a quick refresh to a comprehensive spa-like treatment, we offer three distinct
+                        options for your convenience. With "Bright It," you're in control of how you want to keep
+                        your car bright.
+                    </span>
                 </div>
                 <h2>Choose Body Type</h2>
             </div>
@@ -355,6 +355,10 @@
                         <p class="brightit-info-address"><i class="fa fa-map-marker-alt"></i></p>
                         <p class="brightit-info-phone"><i class="fa fa-phone-alt"></i></p>
                         <p class="brightit-info-email"><i class="fa fa-envelope"></i></p>
+                        <div class="footer-social">
+                            <a class="btn" href="#" id="link-instagram"><i class="fab fa-instagram"></i></a>
+                            <a class="btn" href="#" id="link-whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -389,7 +393,7 @@
     <script src="js/main.js"></script>
     <script>
         // Clear cache if build version updated
-        const buildVersion = 4;
+        const buildVersion = 5;
         if (buildVersion != localStorage.getItem('currentBuildVersion')) {
             $('link[rel="stylesheet"]').each((_, tag) => {
                 $(tag).attr('href', ($(tag).attr('href') || "") + "?v=" + buildVersion)
