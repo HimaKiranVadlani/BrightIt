@@ -886,16 +886,18 @@ a:focus {
 
 .price .price-header h2 {
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: center;
     font-size: 60px;
     font-weight: 700;
     letter-spacing: 5px;
+    margin-left: 12px;
 }
 
 .price .price-header h2 span {
-    font-size: 25px;
+    font-size: 24px;
     line-height: 55px;
+    letter-spacing: 2px;
 }
 
 .price .price-item:hover h2,

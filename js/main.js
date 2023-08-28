@@ -28,7 +28,7 @@
 
     // Book now slide 
     $('.global-book-now').click(function () {
-        $('html, body').animate({ scrollTop: $("#pricingArea").offset().top - 100 }, 1000);
+        $('html, body').animate({ scrollTop: $("#pricingArea").offset().top - 90 }, 1000);
         return false;
     });
 
@@ -89,7 +89,7 @@
             $('#buy-' + subscription).attr("href", whatsappLink);
         });
         if (scrollCounter) {
-            $('html, body').animate({ scrollTop: $("#choosePlan").offset().top - 130 }, 500);
+            $('html, body').animate({ scrollTop: $("#choosePlan").offset().top - 120 }, 500);
         }
         scrollCounter++;
     });

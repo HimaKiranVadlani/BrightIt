@@ -278,11 +278,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <div class="price-item">
                         <div class="price-header">
                             <h3>Silver</h3>
                             <h2><span>&#8377</span><strong data-toggle="counter-up-fast" id="price-silver">0</strong>
+                                <span>/mo</span>
                             </h2>
                         </div>
                         <div class="price-body">
@@ -299,11 +300,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <div class="price-item featured-item">
                         <div class="price-header">
                             <h3>Gold</h3>
-                            <h2><span>&#8377</span><strong data-toggle="counter-up-fast" id="price-gold">0</strong></h2>
+                            <h2><span>&#8377</span><strong data-toggle="counter-up-fast" id="price-gold">0</strong>
+                                <span>/mo</span>
+                            </h2>
                         </div>
                         <div class="price-body">
                             <ul>
@@ -319,11 +322,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <div class="price-item">
                         <div class="price-header">
                             <h3>Platinum</h3>
                             <h2><span>&#8377</span><strong data-toggle="counter-up-fast" id="price-platinum">0</strong>
+                                <span>/mo</span>
                             </h2>
                         </div>
                         <div class="price-body">
@@ -356,8 +360,10 @@
                         <p class="brightit-info-phone"><i class="fa fa-phone-alt"></i></p>
                         <p class="brightit-info-email"><i class="fa fa-envelope"></i></p>
                         <div class="footer-social">
-                            <a class="btn" href="#" id="link-instagram"><i class="fab fa-instagram"></i></a>
-                            <a class="btn" href="#" id="link-whatsapp"><i class="fab fa-whatsapp"></i></a>
+                            <a class="btn" href="#" target="_blank" id="link-instagram"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="btn" href="#" target="_blank" id="link-whatsapp"><i
+                                    class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
                 </div>
@@ -393,7 +399,7 @@
     <script src="js/main.js"></script>
     <script>
         // Clear cache if build version updated
-        const buildVersion = 5;
+        const buildVersion = 7;
         if (buildVersion != localStorage.getItem('currentBuildVersion')) {
             $('link[rel="stylesheet"]').each((_, tag) => {
                 $(tag).attr('href', ($(tag).attr('href') || "") + "?v=" + buildVersion)
