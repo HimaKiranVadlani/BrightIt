@@ -36,7 +36,7 @@
     const clientInfo = {
         "phone": ["+91 9459184999", "+91 9459185999"],
         "whatsapp": "919459184999",
-        "instagram": "",
+        "instagram": "bright_it1",
         "email": ["info@brightit.in"],
         "address": ["1st floor, Yalamanchili Towers, Sri Anjaneya Township, Edupugallu, Vijayawada, 521151"],
         "workinghours": ["8:00 AM - 6:00 PM"]
@@ -46,6 +46,8 @@
         $('.brightit-info-' + key).append(val.toString().replaceAll(",", ", "));
         if (key === "whatsapp") {
             $('#link-' + key).attr("href", ("https://api.whatsapp.com/send?phone=" + val));
+        } else if (key === "instagram") {
+            $('#link-' + key).attr("href", ("https://instagram.com/" + val));
         }
     });
 
