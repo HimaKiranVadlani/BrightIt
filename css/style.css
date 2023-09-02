@@ -339,7 +339,7 @@ a:focus {
     position: relative;
     width: 100%;
     min-height: 300px;
-    max-height: 600px;
+    max-height: 520px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -420,7 +420,7 @@ a:focus {
     position: absolute;
     width: 100%;
     height: 50px;
-    top: calc(82% - 25px);
+    top: calc(80% - 25px);
     left: 0;
     display: flex;
     justify-content: space-between;
@@ -866,7 +866,7 @@ a:focus {
     border: 1px solid #e1e1e1;
 }
 
-.price .price-item:hover {
+.price .price-item:hover, .price .price-item.recommended {
     box-shadow: 0 0 30px rgba(0, 0, 0, .2);
     transition: 0.5s;
     z-index: 1;
@@ -874,6 +874,18 @@ a:focus {
 
 .price .price-header {
     padding: 45px 0 30px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.price .popular-badge {
+    background: var(--theme-primary);
+    color: #fff;
+    position: absolute;
+    top: 26px;
+    left: -36px;
+    rotate: -45deg;
+    padding: 2px 30px 3px;
 }
 
 .price .price-header h3 {
@@ -900,7 +912,9 @@ a:focus {
 }
 
 .price .price-item:hover h2,
-.price .price-item:hover h3 {
+.price .price-item:hover h3,
+.price .price-item.recommended h2,
+.price .price-item.recommended h3 {
     color: var(--theme-primary);
 }
 
@@ -940,7 +954,8 @@ a:focus {
     box-shadow: inset 0 0 0 0 var(--theme-primary);
 }
 
-.price .price-item .price-footer .btn.btn-custom:hover {
+.price .price-item:hover .price-footer .btn.btn-custom,
+.price .price-item.recommended .price-footer .btn.btn-custom {
     color: #ffffff;
     background: var(--theme-primary);
     box-shadow: inset 200px 0 0 0 var(--theme-primary);
@@ -952,11 +967,11 @@ a:focus {
     box-shadow: inset 0 0 0 0 var(--theme-secondary);
 }
 
-.price .price-item:hover .price-footer .btn.btn-custom:hover {
+/* .price .price-item:hover .price-footer .btn.btn-custom:hover {
     color: #fff;
     background: var(--theme-secondary);
     box-shadow: inset 200px 0 0 0 var(--theme-secondary);
-}
+} */
 
 .price .note-highlight {
     display: inline-block;
@@ -1254,7 +1269,7 @@ a:focus {
     width: 100%;
     margin-bottom: 45px;
     padding: 35px 30px 10px 30px;
-    border-radius: 5px;
+    border-radius: 16px;
     background: var(--theme-secondary);
     
 }
@@ -1321,7 +1336,7 @@ a:focus {
 }
 
 .contact .contact-form textarea {
-    height: 125px;
+    height: 170px;
     padding: 8px 15px;
     border-radius: 5px;
     border: 1px solid var(--theme-secondary);

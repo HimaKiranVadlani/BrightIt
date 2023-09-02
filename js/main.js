@@ -28,7 +28,7 @@
 
     // Book now slide 
     $('.global-book-now').click(function () {
-        $('html, body').animate({ scrollTop: $("#pricingArea").offset().top - 90 }, 1000);
+        $('html, body').animate({ scrollTop: $("#pricingArea").offset().top - 110 }, 1000);
         return false;
     });
 
@@ -36,7 +36,7 @@
     const clientInfo = {
         "phone": ["+91 9459184999", "+91 9459185999"],
         "whatsapp": "919459184999",
-        "instagram": "bright_it1",
+        "instagram": "brightit_now",
         "email": ["info@brightit.in"],
         "address": ["1st floor, Yalamanchili Towers, Sri Anjaneya Township, Edupugallu, Vijayawada, 521151"],
         "workinghours": ["8:00 AM - 6:00 PM"]
