@@ -397,7 +397,7 @@
     <script src="js/main.js"></script>
     <script>
         // Clear cache if build version updated
-        const buildVersion = 7;
+        const buildVersion = 8;
         if (buildVersion != localStorage.getItem('currentBuildVersion')) {
             $('link[rel="stylesheet"]').each((_, tag) => {
                 $(tag).attr('href', ($(tag).attr('href') || "") + "?v=" + buildVersion)
