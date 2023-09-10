@@ -1,0 +1,317 @@
+{
+    "clientInfo": {
+        "phone": [
+            "+91 9459184999",
+            "+91 9459185999"
+        ],
+        "whatsapp": "919459184999",
+        "instagram": "brightit_now",
+        "email": [
+            "info@brightit.in"
+        ],
+        "address": [
+            "1st floor, Yalamanchili Towers, Sri Anjaneya Township, Edupugallu, Vijayawada, 521151"
+        ],
+        "workinghours": [
+            "8:00 AM - 6:00 PM"
+        ]
+    },
+    "services": [
+        {
+            "id": 1,
+            "name": "Exterior Foam Wash",
+            "description": "Get your car looking its best with our Exterior Foam Wash service. We'll wash away dirt, mud, and grime from the outside, leaving your car bright and shiny."
+        },
+        {
+            "id": 2,
+            "name": "Exterior Dusting",
+            "description": "Improve the appearance of your vehicle with our Exterior Dusting service. We'll remove dust and debris from the exterior, leaving your car looking fresh."
+        },
+        {
+            "id": 3,
+            "name": "Exterior Wet Cleaning",
+            "description": "For those tough stains & spots, our Exterior Wet Cleaning service is here. We'll use specialized cleaning products to tackle stubborn messes of your car."
+        },
+        {
+            "id": 4,
+            "name": "Under Body Cleaning",
+            "description": "Ensure the undercarriage & Enhance the longevity of your car stays clean and free from dirt and grime with our Under Body Cleaning service."
+        },
+        {
+            "id": 5,
+            "name": "Interior Brightening",
+            "description": "Indulge in the luxury of a pristine and comfortable interior with our Interior Brightening service. No more crumbs, dust, or mess, just a clean and inviting interior."
+        }
+    ],
+    "bodyTypes": [
+        {
+            "id": 1,
+            "name": "Hatchback"
+        },
+        {
+            "id": 2,
+            "name": "Sedan/MUV"
+        },
+        {
+            "id": 3,
+            "name": "SUV"
+        }
+    ],
+    "subscriptionPlans": [
+        {
+            "id": 1,
+            "name": "silver",
+            "duration": "Monthly"
+        },
+        {
+            "id": 2,
+            "name": "gold",
+            "duration": "Monthly"
+        },
+        {
+            "id": 3,
+            "name": "platinum",
+            "duration": "Monthly"
+        }
+    ],
+    "bodyTypesPlansPrice": [
+        {
+            "id": 1,
+            "bodyTypeId": 1,
+            "planId": 1,
+            "price": 1049
+        },
+        {
+            "id": 2,
+            "bodyTypeId": 1,
+            "planId": 2,
+            "price": 1349
+        },
+        {
+            "id": 3,
+            "bodyTypeId": 1,
+            "planId": 3,
+            "price": 1649
+        },
+        {
+            "id": 4,
+            "bodyTypeId": 2,
+            "planId": 1,
+            "price": 1249
+        },
+        {
+            "id": 5,
+            "bodyTypeId": 2,
+            "planId": 2,
+            "price": 1549
+        },
+        {
+            "id": 6,
+            "bodyTypeId": 2,
+            "planId": 3,
+            "price": 1749
+        },
+        {
+            "id": 7,
+            "bodyTypeId": 3,
+            "planId": 1,
+            "price": 1449
+        },
+        {
+            "id": 8,
+            "bodyTypeId": 3,
+            "planId": 2,
+            "price": 1749
+        },
+        {
+            "id": 9,
+            "bodyTypeId": 3,
+            "planId": 3,
+            "price": 1949
+        }
+    ],
+    "bodyTypesServicePrices": [
+        {
+            "id": 1,
+            "bodyTypeId": 1,
+            "serviceId": 1,
+            "price": 349
+        },
+        {
+            "id": 2,
+            "bodyTypeId": 1,
+            "serviceId": 2,
+            "price": 149
+        },
+        {
+            "id": 3,
+            "bodyTypeId": 1,
+            "serviceId": 3,
+            "price": null
+        },
+        {
+            "id": 3,
+            "bodyTypeId": 1,
+            "serviceId": 4,
+            "price": 199
+        },
+        {
+            "id": 3,
+            "bodyTypeId": 1,
+            "serviceId": 5,
+            "price": 149
+        },
+        {
+            "id": 4,
+            "bodyTypeId": 2,
+            "serviceId": 1,
+            "price": 449
+        },
+        {
+            "id": 5,
+            "bodyTypeId": 2,
+            "serviceId": 2,
+            "price": 199
+        },
+        {
+            "id": 6,
+            "bodyTypeId": 2,
+            "serviceId": 3,
+            "price": null
+        },
+        {
+            "id": 6,
+            "bodyTypeId": 2,
+            "serviceId": 4,
+            "price": 249
+        },
+        {
+            "id": 6,
+            "bodyTypeId": 2,
+            "serviceId": 5,
+            "price": 199
+        },
+        {
+            "id": 7,
+            "bodyTypeId": 3,
+            "serviceId": 1,
+            "price": 549
+        },
+        {
+            "id": 8,
+            "bodyTypeId": 3,
+            "serviceId": 2,
+            "price": 249
+        },
+        {
+            "id": 9,
+            "bodyTypeId": 3,
+            "serviceId": 3,
+            "price": null
+        },
+        {
+            "id": 9,
+            "bodyTypeId": 3,
+            "serviceId": 4,
+            "price": 279
+        },
+        {
+            "id": 9,
+            "bodyTypeId": 3,
+            "serviceId": 5,
+            "price": 249
+        }
+    ],
+    "plansServices": [
+        {
+            "id": 1,
+            "planId": 1,
+            "serviceId": 1,
+            "noOfServices": 1
+        },
+        {
+            "id": 2,
+            "planId": 1,
+            "serviceId": 2,
+            "noOfServices": 3
+        },
+        {
+            "id": 3,
+            "planId": 1,
+            "serviceId": 3,
+            "noOfServices": 3
+        },
+        {
+            "id": 3,
+            "planId": 1,
+            "serviceId": 4,
+            "noOfServices": 0
+        },
+        {
+            "id": 3,
+            "planId": 1,
+            "serviceId": 5,
+            "noOfServices": 3
+        },
+        {
+            "id": 4,
+            "planId": 2,
+            "serviceId": 1,
+            "noOfServices": 2
+        },
+        {
+            "id": 5,
+            "planId": 2,
+            "serviceId": 2,
+            "noOfServices": 3
+        },
+        {
+            "id": 6,
+            "planId": 2,
+            "serviceId": 3,
+            "noOfServices": 3
+        },
+        {
+            "id": 6,
+            "planId": 2,
+            "serviceId": 4,
+            "noOfServices": 1
+        },
+        {
+            "id": 6,
+            "planId": 2,
+            "serviceId": 5,
+            "noOfServices": 3
+        },
+        {
+            "id": 7,
+            "planId": 3,
+            "serviceId": 1,
+            "noOfServices": 3
+        },
+        {
+            "id": 8,
+            "planId": 3,
+            "serviceId": 2,
+            "noOfServices": 3
+        },
+        {
+            "id": 9,
+            "planId": 3,
+            "serviceId": 3,
+            "noOfServices": 3
+        },
+        {
+            "id": 9,
+            "planId": 3,
+            "serviceId": 4,
+            "noOfServices": 1
+        },
+        {
+            "id": 9,
+            "planId": 3,
+            "serviceId": 5,
+            "noOfServices": 3
+        }
+    ]
+}

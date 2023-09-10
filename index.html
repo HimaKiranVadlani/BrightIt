@@ -198,40 +198,46 @@
                 <h2>Premium Brightening Services</h2>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="service-item">
                         <i class="flaticon-car-wash-1"></i>
-                        <h3>Exterior Brightening</h3>
+                        <h3>Exterior Foam Wash</h3>
                         <p class="text-center">Get your car looking its best with our Exterior Brightening service.
                             We'll wash away dirt, mud, and grime from the outside, leaving your car bright and shiny.
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <i class="flaticon-car-service"></i>
+                        <h3>Exterior Dusting</h3>
+                        <p class="text-center">Improve the appearance of your vehicle with our Exterior Dusting service.
+                            We'll remove dust and debris from the exterior, leaving your car looking fresh.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <i class="flaticon-car-service-2"></i>
+                        <h3>Exterior Wet Cleaning</h3>
+                        <p class="text-center">For those tough stains & spots, our Wet Cleaning service is here. We'll
+                            use specialized cleaning products to tackle stubborn external messes of your car.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
                     <div class="service-item">
                         <i class="flaticon-car-wash"></i>
+                        <h3>Under Body Cleaning</h3>
+                        <p class="text-center">Ensure the undercarriage & Enhance the longevity of your car stays clean
+                            and free from dirt and grime with our Under Body Cleaning service.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <i class="flaticon-seat"></i>
                         <h3>Interior Brightening</h3>
                         <p class="text-center">Indulge in the luxury of a pristine and comfortable interior with our
                             Interior Brightening service. No more crumbs, dust, or mess, just a clean and inviting
                             interior.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-item">
-                        <i class="flaticon-vacuum-cleaner"></i>
-                        <h3>Vacuum Cleaning</h3>
-                        <p class="text-center">Enjoy a tidy ride with our Vacuum Cleaning service. We'll thoroughly
-                            vacuum your car's seats, carpets, floor mats, and tight spaces to get rid of dirt and
-                            debris.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-item">
-                        <i class="flaticon-car-service-2"></i>
-                        <h3>Wet Cleaning</h3>
-                        <p class="text-center">For those tough stains & spots, our Wet Cleaning service is here. We'll
-                            use specialized cleaning products to tackle stubborn messes on
-                            both the outside and inside of your car.</p>
                     </div>
                 </div>
             </div>
@@ -256,95 +262,128 @@
             </div>
             <div class="row car-body-type-section">
                 <p class="col-md-4 body-item">
-                    <input type="radio" id="hatchback" name="car-body-type" value="hatchback" checked>
+                    <input type="radio" id="hatchback" name="car-body-type" value="1" checked>
                     <label for="hatchback"><img src="./img/hatchback.svg" alt="Hatchback" /></label>
                 </p>
                 <p class="col-md-4 body-item">
-                    <input type="radio" id="sedan-MUV" name="car-body-type" value="sedan-MUV">
-                    <label for="sedan-MUV"><img src="./img/sedan-MUV.svg" alt="Hatchback" /></label>
+                    <input type="radio" id="sedan/muv" name="car-body-type" value="2">
+                    <label for="sedan/muv"><img src="./img/sedan-MUV.svg" alt="Hatchback" /></label>
                 </p>
                 <p class="col-md-4 body-item">
-                    <input type="radio" id="SUV" name="car-body-type" value="SUV">
-                    <label for="SUV"><img src="./img/suv.svg" alt="Hatchback" style="height: 110px;" /></label>
+                    <input type="radio" id="suv" name="car-body-type" value="3">
+                    <label for="suv"><img src="./img/suv.svg" alt="Hatchback" style="height: 110px;" /></label>
                 </p>
             </div>
-            <div class="section-header text-center" id="choosePlan">
-                <h2>Choose Your Plan</h2>
-                <div class="note-highlight"><i class="fas fa-money-bill mr-2"></i>First 100 customers get &#8377 150
-                    off. Hurry Up.
+            <div class="price-model-tab-container">
+                <div class="price-model-tabs">
+                    <button class="price-model-tab-button btn" data-tab="subscription">Subscription</button>
+                    <button class="price-model-tab-button btn" data-tab="one-time">One Time</button>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="price-item recommended">
-                        <div class="price-header">
-                            <span class="popular-badge">Most Popular</span>
-                            <h3>Silver</h3>
-                            <h2><span>&#8377</span><strong data-toggle="counter-up-fast" id="price-silver">0</strong>
-                                <span>/mo</span>
-                            </h2>
+                <div class="w-100" id="price-model-tab-contents">
+                    <div class="price-model-tab-content" id="price-model-tab-subscription">
+                        <div class="section-header text-center" id="choosePlan">
+                            <h2>Choose Your Plan</h2>
+                            <div class="note-highlight"><i class="fas fa-money-bill mr-2"></i>First 100 customers get 10
+                                %
+                                OFF. Hurry Up.
+                            </div>
                         </div>
-                        <div class="price-body">
-                            <ul>
-                                <li><i class="far fa-check-circle"></i>1 x Foam Wash</li>
-                                <li><i class="far fa-check-circle"></i>3 x Dusting</li>
-                                <li><i class="far fa-check-circle"></i>3 x Wet Cleaning & Interiors</li>
-                                <li><i class="far fa-times-circle"></i>Under Body Cleaning</li>
-                            </ul>
-                        </div>
-                        <div class="price-footer">
-                            <a class="btn btn-custom" id="buy-silver" href="javascript:void(0)"
-                                target="_blank">Subscribe</a>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="price-item recommended">
+                                    <div class="price-header">
+                                        <span class="popular-badge">Most Popular</span>
+                                        <h3>Silver</h3>
+                                        <h2><span>&#8377</span><strong data-toggle="counter-up-fast"
+                                                id="plan-price-1">0</strong>
+                                            <span>/mo</span>
+                                        </h2>
+                                    </div>
+                                    <div class="price-body">
+                                        <ul>
+                                            <li><i class="far fa-check-circle"></i>1 x Exterior Foam Wash</li>
+                                            <li><i class="far fa-check-circle"></i>3 x Exterior Dusting</li>
+                                            <li><i class="far fa-check-circle"></i>3 x Exterior Wet Cleaning</li>
+                                            <li><i class="far fa-check-circle"></i>3 x Interior Brightening</li>
+                                            <li><i class="far fa-times-circle"></i>Under Body Cleaning</li>
+                                        </ul>
+                                    </div>
+                                    <div class="price-footer">
+                                        <a class="btn btn-custom" id="buy-1" href="javascript:void(0)"
+                                            target="_blank">Subscribe</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="price-item featured-item">
+                                    <div class="price-header">
+                                        <h3>Gold</h3>
+                                        <h2><span>&#8377</span><strong data-toggle="counter-up-fast"
+                                                id="plan-price-2">0</strong>
+                                            <span>/mo</span>
+                                        </h2>
+                                    </div>
+                                    <div class="price-body">
+                                        <ul>
+                                            <li><i class="far fa-check-circle"></i>2 x Exterior Foam Wash</li>
+                                            <li><i class="far fa-check-circle"></i>3 x Exterior Dusting</li>
+                                            <li><i class="far fa-check-circle"></i>3 x Exterior Wet Cleaning</li>
+                                            <li><i class="far fa-check-circle"></i>3 x Interior Brightening</li>
+                                            <li><i class="far fa-check-circle"></i>1 x Under Body Cleaning</li>
+                                        </ul>
+                                    </div>
+                                    <div class="price-footer">
+                                        <a class="btn btn-custom" id="buy-2" href="javascript:void(0)"
+                                            target="_blank">Subscribe</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="price-item">
+                                    <div class="price-header">
+                                        <h3>Platinum</h3>
+                                        <h2><span>&#8377</span><strong data-toggle="counter-up-fast"
+                                                id="plan-price-3">0</strong>
+                                            <span>/mo</span>
+                                        </h2>
+                                    </div>
+                                    <div class="price-body">
+                                        <ul>
+                                            <li><i class="far fa-check-circle"></i>3 x Exterior Foam Wash</li>
+                                            <li><i class="far fa-check-circle"></i>3 x Exterior Dusting</li>
+                                            <li><i class="far fa-check-circle"></i>3 x Exterior Wet Cleaning</li>
+                                            <li><i class="far fa-check-circle"></i>3 x Interior Brightening</li>
+                                            <li><i class="far fa-check-circle"></i>1 x Under Body Cleaning</li>
+                                        </ul>
+                                    </div>
+                                    <div class="price-footer">
+                                        <a class="btn btn-custom" id="buy-3" href="javascript:void(0)"
+                                            target="_blank">Subscribe</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="price-item featured-item">
-                        <div class="price-header">
-                            <h3>Gold</h3>
-                            <h2><span>&#8377</span><strong data-toggle="counter-up-fast" id="price-gold">0</strong>
-                                <span>/mo</span>
-                            </h2>
+                    <div class="price-model-tab-content" id="price-model-tab-one-time">
+                        <div class="section-header text-center" id="choosePlan">
+                            <h2>Choose Services</h2>
+                            <div class="note-highlight"><i class="fas fa-money-bill mr-2"></i>First 100 customers get 10
+                                %
+                                OFF. Hurry Up.
+                            </div>
                         </div>
-                        <div class="price-body">
-                            <ul>
-                                <li><i class="far fa-check-circle"></i>2 x Foam Wash</li>
-                                <li><i class="far fa-check-circle"></i>3 x Dusting</li>
-                                <li><i class="far fa-check-circle"></i>3 x Wet Cleaning & Interiors</li>
-                                <li><i class="far fa-check-circle"></i>1 x Under Body Cleaning</li>
-                            </ul>
+                        <div id="one-time-service-options" class="one-time-service-options">
                         </div>
-                        <div class="price-footer">
-                            <a class="btn btn-custom" id="buy-gold" href="javascript:void(0)"
-                                target="_blank">Subscribe</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="price-item">
-                        <div class="price-header">
-                            <h3>Platinum</h3>
-                            <h2><span>&#8377</span><strong data-toggle="counter-up-fast" id="price-platinum">0</strong>
-                                <span>/mo</span>
-                            </h2>
-                        </div>
-                        <div class="price-body">
-                            <ul>
-                                <li><i class="far fa-check-circle"></i>3 x Foam Wash</li>
-                                <li><i class="far fa-check-circle"></i>3 x Dusting</li>
-                                <li><i class="far fa-check-circle"></i>3 x Wet Cleaning & Interiors</li>
-                                <li><i class="far fa-check-circle"></i>1 x Under Body Cleaning</li>
-                            </ul>
-                        </div>
-                        <div class="price-footer">
-                            <a class="btn btn-custom" id="buy-platinum" href="javascript:void(0)"
-                                target="_blank">Subscribe</a>
+                        <div class="one-time-service-proceedings">
+                            <a class="btn btn-custom" id="book-one-time-service-options" href="javascript:void(0);"
+                                target="_blank">Book Now</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Price End -->
 
     <!-- Footer Start -->
@@ -397,7 +436,7 @@
     <script src="js/main.js"></script>
     <script>
         // Clear cache if build version updated
-        const buildVersion = 8;
+        const buildVersion = 9;
         if (buildVersion != localStorage.getItem('currentBuildVersion')) {
             $('link[rel="stylesheet"]').each((_, tag) => {
                 $(tag).attr('href', ($(tag).attr('href') || "") + "?v=" + buildVersion)

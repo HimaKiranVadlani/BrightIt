@@ -857,6 +857,32 @@ a:focus {
     height: 100px;
 }
 
+.price .price-model-tab-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.price .price-model-tabs {
+    border: 1px solid var(--theme-primary);
+    border-radius: 60px;
+    margin: 30px 0;
+}
+
+.price .price-model-tab-container .price-model-tabs .price-model-tab-button {
+    min-height: 46px;
+    min-width: 180px;
+    font-weight: 600;
+}
+.price .price-model-tab-container .price-model-tabs .price-model-tab-button:not(.btn-custom) {
+    color: var(--theme-primary);
+}
+
+.price .price-model-tab-container .price-model-tab-content {
+    width: 100%;
+}
+
 .price .price-item {
     position: relative;
     margin-bottom: 30px;
@@ -882,7 +908,7 @@ a:focus {
     background: var(--theme-primary);
     color: #fff;
     position: absolute;
-    top: 26px;
+    top: 24px;
     left: -36px;
     rotate: -45deg;
     padding: 2px 30px 3px;
@@ -919,7 +945,7 @@ a:focus {
 }
 
 .price .price-body {
-    padding: 0 0 20px 0;
+    padding: 0 0 22px 0;
 }
 
 .price .price-body ul {
@@ -975,7 +1001,7 @@ a:focus {
 
 .price .note-highlight {
     display: inline-block;
-    margin-top: 25px;
+    margin-top: 30px;
     background: #31f78a;
     font-weight: 600;
     color: #2e2e2e;
@@ -983,6 +1009,31 @@ a:focus {
     padding: 4px 20px;
 }
 
+.price .one-time-service-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price .one-time-service-options label {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--theme-primary);
+    cursor: pointer;
+}
+.price .one-time-service-options label:hover {
+    color: var(--theme-secondary);
+}
+
+.price .one-time-service-options input {
+    margin: 20px 10px 0 10px;
+}
+
+.price .one-time-service-proceedings {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
 /*******************************/
 /******** Location CSS *********/
 /*******************************/
