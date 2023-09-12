@@ -872,8 +872,9 @@ a:focus {
 
 .price .price-model-tab-container .price-model-tabs .price-model-tab-button {
     min-height: 46px;
-    min-width: 180px;
+    min-width: 150px;
     font-weight: 600;
+    border-radius: 60px;
 }
 .price .price-model-tab-container .price-model-tabs .price-model-tab-button:not(.btn-custom) {
     color: var(--theme-primary);
